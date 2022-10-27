@@ -4,6 +4,7 @@ import time
 import os
 import string
 
+
 def writeData(path, mode, datos):
     with open(path, mode, encoding='UTF8') as f:
         w = csv.DictWriter(f, datos.keys())
