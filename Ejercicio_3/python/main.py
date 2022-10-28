@@ -7,14 +7,14 @@ import string
 
 def writeData(path, mode, datos):
     with open(path, mode, encoding='UTF8') as f:
-        w = csv.DictWriter(f, datos.keys())
-        
-        # If file doesn't exist, create header
-        if f.tell() == 0:
-            w.writeheader()
+      w = csv.DictWriter(f, datos.keys())
 
-        # write the data
-        w.writerow(datos)
+      # If file doesn't exist, create header
+      if f.tell() == 0:
+          w.writeheader()
+
+      # write the data
+      w.writerow(datos)
 
 def word_count(str,dictCount):
   
